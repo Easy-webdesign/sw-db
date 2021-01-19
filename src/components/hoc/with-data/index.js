@@ -1,0 +1,1 @@
+export {default as withData} from './with-data';
