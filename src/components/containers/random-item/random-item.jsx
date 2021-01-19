@@ -28,7 +28,7 @@ class RandomItem extends Component {
     }
 
     updatePlanet = () => {
-        const {getPlanet, getPerson, getStarship} = this.sw;
+        const {getPlanet} = this.sw;
         const id = Math.floor(Math.random() * 25) + 2;
 
         getPlanet(id)

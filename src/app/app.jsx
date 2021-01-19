@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import { Header, ErrorIndicator, PersonList, SwProvider, PersonDetails, RandomItem, StarshipDetails} from '../components';
-import { Row } from '../components';
+import { Header, ErrorIndicator, SwProvider, RandomItem, StarshipDetails} from '../components';
 import { ErrorBoundry } from '../components/hoc';
 import { LoginPage, PeoplePage, PlanetsPage, SecretPage, StarshipsPage } from '../pages';
 import { SwapiService } from '../services/sw';
-import {BrowserRouter as Router, Redirect, Route, Switch} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 
 import './index.scss';
@@ -34,9 +33,6 @@ class App extends Component {
 
   render(){
     if(this.state.hasError) return <ErrorIndicator/>
-
-    const personDetails = <PersonDetails itemId={5}/>;
-    const itemList1 = <PersonList/>;
 
     return (
       <ErrorBoundry>

@@ -5,8 +5,7 @@ const ItemTemp = p => {
     const item = p;
     return(
         <div className="person-details card">
-            <img className="person-image"
-            src={p.img} />
+            <img className="person-image" src={p.img} alt='img'/>
 
             <div className="card-body">
             <h4>{p.name}</h4>
